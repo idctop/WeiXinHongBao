@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
     }
 
     public void openGithub(View view) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hailunpiano.com"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/idctop/WeiXinHongBao"));
         startActivity(browserIntent);
     }
 

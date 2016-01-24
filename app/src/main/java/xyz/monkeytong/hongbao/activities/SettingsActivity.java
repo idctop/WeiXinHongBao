@@ -37,7 +37,7 @@ public class SettingsActivity extends PreferenceActivity {
         Preference issuePref = findPreference("pref_etc_issue");
         issuePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             public boolean onPreferenceClick(Preference preference) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hailunpiano.com"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/idctop/WeiXinHongBao/issues"));
                 browserIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 SettingsActivity.this.startActivity(browserIntent);
                 return false;

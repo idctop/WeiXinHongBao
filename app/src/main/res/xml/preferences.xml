@@ -42,7 +42,7 @@
         <Preference
                 android:key="pref_etc_check_update"
                 android:title="检查新版本"
-                android:summary="https://github.com/geeeeeeeeek/WeChatLuckyMoney/releases"
+                android:summary="https://github.com/idctop/WeiXinHongBao/releases"
                 android:layout="@layout/preference_checkbox"/>
         <Preference
                 android:key="pref_etc_issue"
