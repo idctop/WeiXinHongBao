@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
             int placeholderHeight = getStatusBarHeight();
             placeholder.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, placeholderHeight));
         } catch (Exception e) {
-            // 考虑到大多数非MIUI ROM都会打印出错误栈,不太优雅,而且一点卵用也没有,于是删了
+            // Do nothing
         }
     }
 
@@ -90,7 +90,7 @@ public class MainActivity extends Activity {
         List<AccessibilityServiceInfo> accessibilityServices =
                 accessibilityManager.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_GENERIC);
         for (AccessibilityServiceInfo info : accessibilityServices) {
-            if (info.getId().equals(getPackageName() + "/.HongbaoService")) {
+            if (info.getId().equals(getPackageName() + "/.services.HongbaoService")) {
                 serviceEnabled = true;
                 break;
             }
